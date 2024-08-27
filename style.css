@@ -47,6 +47,11 @@ header {
     background-color: var(--main-color);
     opacity: 0.9;
 }
+#menu-icon{
+    height: 100%;
+    display: none;
+    cursor: pointer;
+}
 header a img{
     width: 157px;
     height: 54px;
@@ -621,7 +626,10 @@ footer nav a{
 }
 /*---------------------- on screen max width 1024px ----------------------*/
 @media(max-width: 1023px) {
-    header nav{
+    #menu-icon{
+        display: block;
+    }
+    header nav, header div{
         display: none;
     }
     footer div{
